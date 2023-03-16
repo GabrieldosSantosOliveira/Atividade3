@@ -6,7 +6,10 @@ O Star Converse é uma aplicação que possibilita coverter de graus Celsius par
 para a contrução dos inputs e Lottie para as animações
 
 ## 🔖 Demonstração
-https://user-images.githubusercontent.com/86084272/219445161-bb0d77ef-2d65-4005-8429-ec03b538861b.mp4
+
+
+https://user-images.githubusercontent.com/86084272/225708852-5a7eecf8-9a8a-4a74-9ec0-fb8fcf37f72c.mp4
+
 
 
 ## 🛠️ Tecnologias
