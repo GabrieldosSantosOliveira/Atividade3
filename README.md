@@ -8,7 +8,7 @@ para a contrução dos inputs e Lottie para as animações
 
 ## 🔖 Demonstração
 
-https://user-images.githubusercontent.com/86084272/225708852-5a7eecf8-9a8a-4a74-9ec0-fb8fcf37f72c.mp4
+https://github.com/GabrieldosSantosOliveira/Atividade3/assets/86084272/f40ccabe-8694-4d2c-af11-16e1b52a833b
 
 ## 🛠️ Tecnologias
 
