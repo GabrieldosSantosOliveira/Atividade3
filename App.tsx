@@ -17,7 +17,7 @@ export default function App() {
   const { colors } = Theme;
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <StatusBar backgroundColor={colors.background} />
+      <StatusBar backgroundColor={colors.background} style="dark" />
       {isFontsLoaded ? <Home /> : <Loading />}
     </SafeAreaView>
   );

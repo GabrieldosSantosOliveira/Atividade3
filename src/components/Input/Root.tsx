@@ -1,5 +1,5 @@
 import { FC, ReactNode } from 'react';
-import { View, ViewProps } from 'react-native';
+import { View, ViewProps, StyleSheet } from 'react-native';
 
 import { InputProvider } from '../../contexts/InputContext';
 import { useInput } from '../../hooks/useInput';
@@ -8,28 +8,12 @@ type Props = ViewProps & {
   children: ReactNode;
   _focus?: ViewProps['style'];
 };
+const { colors, size } = Theme;
+
 const RootBase: FC<Props> = ({ children, style, _focus, ...props }) => {
   const { isFocus } = useInput();
-  const { colors, size } = Theme;
   return (
-    <View
-      {...props}
-      style={[
-        {
-          backgroundColor: colors.inputBackground,
-          height: size[52],
-          borderRadius: 8,
-          flexDirection: 'row',
-          alignItems: 'center',
-          borderWidth: 1,
-          borderColor: colors.inputBorder,
-          gap: 10,
-          paddingHorizontal: 10,
-        },
-        style,
-        isFocus ? _focus : {},
-      ]}
-    >
+    <View {...props} style={[styles.root, style, isFocus ? _focus : {}]}>
       {children}
     </View>
   );
@@ -41,3 +25,16 @@ export const Root: FC<Props> = ({ children, ...props }) => {
     </InputProvider>
   );
 };
+const styles = StyleSheet.create({
+  root: {
+    backgroundColor: colors.inputBackground,
+    height: size[52],
+    borderRadius: 8,
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: colors.inputBorder,
+    gap: 10,
+    paddingHorizontal: 10,
+  },
+});
